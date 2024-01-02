@@ -1,0 +1,339 @@
+*
+{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+#container
+{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../images/background1.jpg");
+    background-size: cover;
+    background-position:center;
+}
+.header
+{
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+.menu
+{
+	height: 150px;
+	background-color: rgba(0,0,0,0.2);
+	display: grid;
+	grid-template-columns: 1fr 6fr 1fr 2fr;
+	gap: 10px;
+}
+.logo img
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 40%;
+	margin-left: 10px;
+}
+.menu ul
+{
+	display:flex;
+	flex-direction:coloumn;
+	padding-right: 10px;
+	list-style: none;
+	margin: 10px;
+}
+.menu ul li
+{
+	display:inline;
+	position: relative;
+}
+.menu ul li a
+{
+	font-size:1em;
+	font-weight: bold;
+	text-decoration:none;
+	color:white;
+	padding:10px;
+	text-transform: uppercase;
+}
+.menu ul li a:hover
+{
+	padding-top: 5px;
+	background-color:rgba(15, 242, 73, 0.5);
+	border-radius: 10px;
+}
+.nav
+{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+.search
+{
+	max-width: 500px;
+	height: 30px;
+	width: 80%;
+	background-color:white;
+	display: flex;
+	margin: 5px 490px 5px 10px;
+	padding: 5px;
+	outline: none;
+	border: 0px;
+	border-radius: 10px;
+}
+.search input
+{
+	border: none;
+	outline: none;
+	width: 90%;
+}
+.search button
+{
+	width: 100px;
+	height: 30px;
+	border-color:white;
+	display: block;
+	padding: 0;
+	margin-top: 0;
+	color: black;
+}
+.profile img
+{
+    width: 100px;
+    height: 100px;
+}
+.login ul li
+{
+	margin-top: 20px;
+}
+.in_menu
+{
+	display: none;
+}
+.menu ul li:hover .in_menu
+{
+	display:block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	background-color:rgba(15, 242, 73, 0.1);
+	border-radius: 0px;
+}
+.in_menu ul
+{
+	display:flex;
+	flex-direction:row;
+}
+.in_menu ul li
+{
+	width: 100px;
+	padding: 2px;
+	margin: 2px;
+}
+.slider
+{
+    width: 1450px;
+    height: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 10px;
+}
+.slides
+{
+    width: 500%;
+    height: 700px;
+    display: flex;
+}
+.slide img
+{
+    height: 700px;
+    width: 1450px;
+}
+.slides input
+{
+    display: none; 
+}
+.slide
+{
+    width: 20%;
+    transition: 2s;
+}
+/*CSS for manual navigation*/
+.nav_manual
+{
+    position: absolute;
+    width: 1450px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual_btn
+{
+    border: 5px solid rgba(15, 242, 73, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0px 40px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual_btn:hover
+{
+    background-color: rgba(15, 242, 73, 0.5);
+}
+#rbtn1:checked~.first
+{
+    margin-left: 0;
+}
+#rbtn2:checked~.first
+{
+    margin-left: -20%;
+}
+#rbtn3:checked~.first
+{
+    margin-left: -40%;
+}
+#rbtn4:checked~.first
+{
+    margin-left: -60%;
+}
+/*content start*/
+.para
+{
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+.name
+{
+    color: seagreen;
+    font-weight: bold;
+    display: inline;
+}
+#courses
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:10px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.heading
+{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: seagreen;
+}
+.icon
+{
+    font-size: 2em;
+    text-decoration: none;
+    color: seagreen;
+}
+#ourteam
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap:20px;
+    padding: 20px;
+    margin:20px 100px;
+}
+.team img
+{
+    gap: 10px;
+    height: 200px;
+    width: 300px;
+}
+.team
+{
+    text-align: center;
+    color: white;
+}
+#journey video
+{
+    height: 500px;
+    width: 100%;
+    margin: 10px 0;
+}
+.book button
+{
+    height: 50px;
+    width: 600px;
+    padding: 10px;
+    margin: 20px 450px;
+    font-size: 2em;
+    border-radius: 10px;
+    background-color: red;
+    border: 0;
+}
+.book button a
+{
+    text-decoration: none;
+    color: white;
+}
+.Page h1 a
+{
+	border: 1px solid black;
+	background-color: seagreen;
+	border-radius: 10px;
+	color: white;
+	height: 50px;
+	width: 250px;
+	padding: 10px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	margin: 10px auto;
+	gap: 5px;
+	text-decoration: none;
+}
+.arrow h1 a
+{
+	border: 1px solid black;
+	background-color: black;
+	border-radius: 10px;
+	color: white;
+	height: 35px;
+	width: 20px;
+	padding: 3px;
+	text-decoration: none;
+	display: flex;
+	margin: 10px auto;
+}
+/*footer*/
+.Main-footer{
+	display:flex;
+	background-color:rgba(0,0,0,0.2);
+	gap:50px;
+}
+.social div
+{
+	display:inline;
+}
+.social div img
+{
+	margin: 20px;
+	padding:20px 0px 20px 0px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+}
+footer h4
+{
+	color: white;
+}
+
+button
+{
+	padding: 15px 15px;
+	margin: 30px 20px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	width: 200px;
+	height: 50px;
+	border-radius: 25px;
+	cursor: pointer;
+	border: 1px solid green;
+	background: transparent;
+	position: relative;
+	overflow:hidden;
+}

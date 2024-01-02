@@ -1,0 +1,248 @@
+*
+{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../Images/background1.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+/*Header start*/
+.header
+{
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+.menu
+{
+	height: 100px;
+	background-color: rgba(0,0,0,0.2);
+	display: grid;
+	grid-template-columns: 1fr 6fr 1fr 2fr;
+	gap: 10px;
+}
+.logo img
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 40%;
+	margin-left: 10px;
+}
+.menu ul
+{
+	display:flex;
+	flex-direction:coloumn;
+	padding-right: 10px;
+	list-style: none;
+	margin: 10px;
+}
+.menu ul li
+{
+	display:inline;
+	position: relative;
+}
+.menu ul li a
+{
+	font-size:1em;
+	font-weight: bold;
+	text-decoration:none;
+	color:white;
+	padding:10px;
+	text-transform: uppercase;
+}
+.menu ul li a:hover
+{
+	padding-top: 5px;
+	background-color:rgba(15, 242, 73, 0.5);
+	border-radius: 10px;
+}
+.nav
+{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+.search
+{
+	max-width: 500px;
+	height: 30px;
+	width: 80%;
+	background-color:white;
+	display: flex;
+	margin: 5px 490px 5px 10px;
+	padding: 5px;
+	outline: none;
+	border: 0px;
+	border-radius: 10px;
+}
+.search input
+{
+	border: none;
+	outline: none;
+	width: 90%;
+}
+.search button
+{
+	width: 100px;
+	height: 30px;
+	border-color:white;
+	display: block;
+	padding: 0;
+	margin-top: 0;
+	color: black;
+}
+.profile img
+{
+    width: 100px;
+    height: 100px;
+}
+.login ul li
+{
+	margin-top: 20px;
+}
+.in_menu
+{
+	display: none;
+}
+.menu ul li:hover .in_menu
+{
+	display:block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	background-color:rgba(15, 242, 73, 0.5);
+	border-radius: 0px;
+}
+.in_menu ul
+{
+	display:flex;
+	flex-direction:row;
+}
+.in_menu ul li
+{
+	width: 100px;
+	padding: 2px;
+	margin: 2px;
+}
+/*Header end*/
+
+#content
+{
+	text-align: center;
+	color: white;
+}
+.form{
+    background-color: rgba(0,0,0, 0.7);
+    color: white;
+	border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+    width: 60%;
+	height: 600px;
+	padding: 15px;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+}
+.form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.btn:hover{
+	background-color:rgba(15, 242, 73, 0.5) ;
+}  
+#signup{
+	font-size: 15px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #ccc;
+}
+button
+{
+	padding: 15px 15px;
+	margin: 30px 20px;
+	text-align: center;
+	color: chocolate;
+	font-weight: bold;
+	width: 200px;
+	height: 50px;
+	border-radius: 25px;
+	cursor: pointer;
+	border: 1px solid green;
+	background: transparent;
+	position: relative;
+	overflow:hidden;   
+}
+.Page h1 a
+{
+	border: 1px solid black;
+	background-color: seagreen;
+	border-radius: 10px;
+	color: white;
+	height: 40px;
+	width: 250px;
+	padding: 10px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	margin: 10px auto;
+	gap: 5px;
+	text-decoration: none;
+}
+
+/*footer*/
+.Main-footer
+{
+	display:flex;
+	background-color:rgba(0,0,0,0.2);
+	gap:50px;
+}
+.social div
+{
+	display:inline;
+}
+.social div img
+{
+	margin: 20px;
+	padding:20px 0px 20px 0px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+}
+footer h4
+{
+	color: white;
+}
+/*common footer features*/
+button
+{
+	padding: 15px 15px;
+	margin: 30px 20px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	width: 200px;
+	height: 50px;
+	border-radius: 25px;
+	cursor: pointer;
+	border: 1px solid green;
+	background: transparent;
+	position: relative;
+	overflow:hidden;
+}

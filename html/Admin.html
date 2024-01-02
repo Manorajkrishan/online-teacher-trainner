@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin-The Tutor-Online Teacher Traniner Institute</title>
+    <style>
+    
+/*Header start*/
+.header
+{
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+.menu
+{
+	height: 100px;
+	background-color: rgba(0,0,0,0.2);
+	display: grid;
+	grid-template-columns: 1fr 6fr 1fr 2fr;
+	gap: 10px;
+}
+.logo img
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 40%;
+	margin-left: 10px;
+}
+.menu ul
+{
+	display:flex;
+	flex-direction:coloumn;
+	padding-right: 10px;
+	list-style: none;
+	margin: 10px;
+}
+.menu ul li
+{
+	display:inline;
+	position: relative;
+}
+.menu ul li a
+{
+	font-size:1em;
+	font-weight: bold;
+	text-decoration:none;
+	color:white;
+	padding:10px;
+	text-transform: uppercase;
+}
+.menu ul li a:hover
+{
+	padding-top: 5px;
+	background-color:rgba(15, 242, 73, 0.5);
+	border-radius: 10px;
+}
+.nav
+{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+.search
+{
+	max-width: 500px;
+	height: 30px;
+	width: 80%;
+	background-color:white;
+	display: flex;
+	margin: 5px 490px 5px 10px;
+	padding: 5px;
+	outline: none;
+	border: 0px;
+	border-radius: 10px;
+}
+.search input
+{
+	border: none;
+	outline: none;
+	width: 90%;
+}
+.search button
+{
+	width: 100px;
+	height: 30px;
+	border-color:white;
+	display: block;
+	padding: 0;
+	margin-top: 0;
+	color: black;
+}
+.profile img
+{
+    width: 100px;
+    height: 100px;
+}
+.login ul li
+{
+	margin-top: 20px;
+}
+.in_menu
+{
+	display: none;
+}
+.menu ul li:hover .in_menu
+{
+	display:block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	background-color:rgba(15, 242, 73, 0.5);
+	border-radius: 0px;
+}
+.in_menu ul
+{
+	display:flex;
+	flex-direction:row;
+}
+.in_menu ul li
+{
+	width: 100px;
+	padding: 2px;
+	margin: 2px;
+}
+/*Header end*/
+
+        *
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0;
+}
+.container
+{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../images/background1.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+/*footer*/
+.Main-footer
+{
+	display:flex;
+	background-color:rgba(0,0,0,0.2);
+	gap:50px;
+}
+.social div
+{
+	display:inline;
+}
+.social div img
+{
+	margin: 20px;
+	padding:20px 0px 20px 0px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+}
+footer h4
+{
+	color: white;
+}
+
+        /*common footer features*/
+button
+{
+	padding: 15px 15px;
+	margin: 30px 20px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	width: 200px;
+	height: 50px;
+	border-radius: 25px;
+	cursor: pointer;
+	border: 1px solid green;
+	background: transparent;
+	position: relative;
+	overflow:hidden;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- header -->
+        <div class="header">
+            <h1>The Tutor</h1>
+        </div>
+        <div class="menu">
+            <div class="logo">
+                <a href="front page.html"><img src="../Images/logo1.jpg" alt="logo not found"></a>
+            </div>
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="What you are looking for?">
+                    <button type="submit">search</button>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="About Us.html">About Us</a></li>
+                        <li><a href="Contact Us.html">Contact Us</a></li>
+                        <li><a href="Helppage.html">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="profile">
+                <a href="user account.html"><img src="../Images/profile.png"></a>
+            </div>
+            <div class="login">
+                <ul>
+                    <li><a href="signup.html">Log in</a>
+                        <div class="in_menu">
+                            <ul>
+                                <li><a href="signin.html">Sign in</a></li>
+                                <li><a href="signup.html">Sign up</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  </div>
+  <form action="../php/delete.php" method="post">
+    <label for="email" >Email: </label><br>
+    <input type="email" id="email" name="email"><br>
+    <button type="submit" font-color:black>Delete Account</button>
+  </form>
+
+
+  <footer>
+    <div class="Main-footer">
+      <div class="sub-footer1">
+        <div class="logo">
+            <img src="../Images/logo1.jpg" height="100px" width="100px">
+        </div>
+        <br>
+        <h4>Terms and conditions | Cookie Settings | Privacy policy</h4>
+      </div>
+      <div class="sub-footer2">
+        <h4>Now available in:</h4>
+        <a href="https://play.google.com/store/apps/details?id=com.sliitgo.evoxlk" target="_blank"><img src="../Images/playstore.jpg" height="50px" width="170px"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.evoxsolutions.am_sliit" target="_blank"><img src="../Images/apple.jpg" height="50px" width="170px"></a>
+        <br>
+        <h4>Copyright 2023 &copy The Tutor. All Rights Reserved</h4>
+      </div>
+      <div class="social">
+        <div class="fb">
+          <a href="https://www.facebook.com/sliit.lk/" target="_blank"><img src="../Images/facebook.jpg"></a>
+        </div>
+        <div class="isnta">
+          <a href="https://www.instagram.com/sliit.life/?hl=en" target="_blank"><img src="../Images/insta.jpg"></a>
+        </div>
+        <div class="gmail">
+          <a href="https://www.sliit.lk/email/" target="_blank"><img src="../Images/mail.jpg"></a>
+        </div>
+        <div class="linkedin">
+          <a href="https://lk.linkedin.com/company/fcsc-sliit" target="_blank"><img src="../Images/linkedin.jpg"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

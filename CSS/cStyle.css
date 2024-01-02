@@ -1,0 +1,302 @@
+/* Contact Us */
+*
+{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../Images/background1.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+/*Header start*/
+.header
+{
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+.menu
+{
+	height: 100px;
+	background-color: rgba(0,0,0,0.2);
+	display: grid;
+	grid-template-columns: 1fr 6fr 1fr 2fr;
+	gap: 10px;
+}
+.logo img
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 40%;
+	margin-left: 10px;
+}
+.menu ul
+{
+	display:flex;
+	flex-direction:coloumn;
+	padding-right: 10px;
+	list-style: none;
+	margin: 10px;
+}
+.menu ul li
+{
+	display:inline;
+	position: relative;
+}
+.menu ul li a
+{
+	font-size:1em;
+	font-weight: bold;
+	text-decoration:none;
+	color:white;
+	padding:10px;
+	text-transform: uppercase;
+}
+.menu ul li a:hover
+{
+	padding-top: 5px;
+	background-color:rgba(15, 242, 73, 0.5);
+	border-radius: 10px;
+}
+.nav
+{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+.search
+{
+	max-width: 500px;
+	height: 30px;
+	width: 80%;
+	background-color:white;
+	display: flex;
+	margin: 5px 490px 5px 10px;
+	padding: 5px;
+	outline: none;
+	border: 0px;
+	border-radius: 10px;
+}
+.search input
+{
+	border: none;
+	outline: none;
+	width: 90%;
+}
+.search button
+{
+	width: 100px;
+	height: 30px;
+	border-color:white;
+	display: block;
+	padding: 0;
+	margin-top: 0;
+	color: black;
+}
+.profile img
+{
+    width: 100px;
+    height: 100px;
+}
+.login ul li
+{
+	margin-top: 20px;
+}
+.in_menu
+{
+	display: none;
+}
+.menu ul li:hover .in_menu
+{
+	display:block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	background-color:rgba(15, 242, 73, 0.5);
+	border-radius: 0px;
+}
+.in_menu ul
+{
+	display:flex;
+	flex-direction:row;
+}
+.in_menu ul li
+{
+	width: 100px;
+	padding: 2px;
+	margin: 2px;
+}
+/*Header end*/
+
+
+.ProblemForm{
+	border:1px solid coral;
+	transition:o.8s ease;
+	width:410px;
+	color:white;
+	font-family:Century Gothic;
+	border-radius:10px;
+	opacity:0.7;
+}
+
+.ProblemForm:hover{
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../Images/formbg3.jpg");
+	border:1px solid white;
+	background-size:cover;
+	background-position:center;
+	opacity:0.9;
+	color:aqua;
+}
+
+.problem{
+	height:100px;
+	width:300px;
+}
+
+.CustomButton{
+	background-color:#37B9F1;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius:20px;
+	color:black;
+}
+
+.CustomButton:hover{
+  background-color: blue;
+  transition:o.8s ease;
+  color:coral;
+}
+
+.location {
+	margin-left: 125px;
+	color: white;
+	font-size: 25px;
+}
+.form-container {
+	display: flex;
+	gap:50px;
+	width:100%;
+}
+
+.FName, .LName, .MailAddress, .PasWord, .PhoneNumber{
+	border: 1px solid green;
+	border-radius: 20px;
+	height: 25px;
+	padding:5px 10px 5px 10px;
+}
+/* About Us Page */
+.Abt{
+	background-color:White;
+	color:Black;
+	font-family:Century Gothic;
+	text-align:center;
+	height:50px;
+	width:150px;
+	padding:0px 10px 0px 10px;
+}
+
+.ABTUS{
+	border:1px solid coral;
+	background-image: url("../Images/book.png");
+	opacity:0.9;
+	width:1000px;
+	height:150px;
+	background-size:cover;
+	background-position:center;
+	text-align:justify;
+	padding:50px 50px 50px 50px;
+}
+
+.nextPage{
+	background-color:coral;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	color:black;
+	opacity:0.7;
+	border-radius:10px;
+}
+
+.nextPage:hover{
+	background-color:purple;
+	color:silver;
+}
+
+.tour{
+	color:yellow;
+}
+
+.ourVideo{
+	width:500px;
+	height:250px;
+	border:3px solid black;
+}
+.date h1,h3
+{
+	color: white;
+	text-align: center;
+}
+
+.Page h1 a
+{
+	border: 1px solid black;
+	background-color: seagreen;
+	border-radius: 10px;
+	color: white;
+	height: 40px;
+	width: 250px;
+	padding: 10px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	margin: 10px auto;
+	gap: 5px;
+	text-decoration: none;
+}
+
+/*footer*/
+.Main-footer
+{
+	display:flex;
+	background-color:rgba(0,0,0,0.2);
+	gap:50px;
+}
+.social div
+{
+	display:inline;
+}
+.social div img
+{
+	margin: 20px;
+	padding:20px 0px 20px 0px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+}
+footer h4
+{
+	color: white;
+}
+/*common footer features*/
+button
+{
+	padding: 15px 15px;
+	margin: 30px 20px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	width: 200px;
+	height: 50px;
+	border-radius: 25px;
+	cursor: pointer;
+	border: 1px solid green;
+	background: transparent;
+	position: relative;
+	overflow:hidden;
+}
